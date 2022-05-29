@@ -6,7 +6,7 @@ const Error = () => {
     <section className='section'>
       <center>
         <img src={err404Img.default} alt="not found" />
-        <Link to='/' className="btn" style={{ marginTop: "22px" }}>Go Back home</Link>
+        <Link to='/' className="btn" style={{ marginTop: "22px" }}><span>&larr;</span> Go Back home</Link>
       </center>
     </section>
   );
