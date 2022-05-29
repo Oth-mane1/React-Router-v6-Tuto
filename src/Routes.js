@@ -5,6 +5,7 @@ import Products from './components/Products';
 import Error from './components/Error';
 import { useEffect } from 'react';
 import { hideLoader } from './components/Loader';
+import SingleProduct from './components/SingleProduct';
 
 function App() {
   useEffect(hideLoader)
@@ -32,6 +33,9 @@ function App() {
   }, {
     path: "products",
     element: <Products />,
+  }, {
+    path: "products/:productId",
+    element: <SingleProduct />,
   }, {
     path: "*",
     element: <Error />,
