@@ -13,13 +13,6 @@ const products = [
       'https://dl.airtable.com/.attachmentThumbnails/0be1af59cf889899b5c9abb1e4db38a4/d631ac52',
   },
   {
-    id: 'rec5NBwZ5zCD9nfF0',
-    name: 'albany table',
-
-    image:
-      'https://dl.airtable.com/.attachmentThumbnails/7478483f40a2f56662a87b304bd4e104/707d397f',
-  },
-  {
     id: 'recd1jIVIEChmiwhe',
     name: 'armchair',
 
@@ -32,6 +25,13 @@ const products = [
     image:
       'https://dl.airtable.com/.attachmentThumbnails/a6119fabf7256049cc0e8dbcdf536c9c/b0153f66',
   },
+  {
+    id: 'rec5NBwZ5zCD9nfF0',
+    name: 'albany table',
+
+    image:
+      'https://dl.airtable.com/.attachmentThumbnails/7478483f40a2f56662a87b304bd4e104/707d397f',
+  },
 ];
 
-export default products;
+export { products };
