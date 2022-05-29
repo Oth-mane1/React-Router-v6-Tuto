@@ -1,7 +1,6 @@
 import { useState } from "react";
 import NavBarLink from "./NavBarLink";
 import "../../style/navBar.css";
-import { showLoader, hideLoader } from "./../Loader";
 
 export default function NavBar() {
     const [isNavExpanded, setIsNavExpanded] = useState(false)
