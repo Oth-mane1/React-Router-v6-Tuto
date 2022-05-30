@@ -1,4 +1,4 @@
-import { useRoutes } from 'react-router-dom'
+import { useRoutes, useLocation } from 'react-router-dom'
 import Home from './components/Home';
 import About from './components/About';
 import Products from './components/Products';
@@ -6,9 +6,15 @@ import Error from './components/Error';
 import { useEffect } from 'react';
 import { hideLoader } from './components/Loader';
 import SingleProduct from './components/SingleProduct';
+import { TitlesPage } from './TitlePage';
 
 function App() {
-  useEffect(hideLoader)
+  const location = useLocation();
+  useEffect(() => {
+    document.title = TitlesPage[location.pathname] ?? "React Rourter App";
+    hideLoader()
+  }, [location])
+
   return useRoutes([{
     path: "/",
     index: true,
@@ -35,7 +41,7 @@ function App() {
     element: <Products />,
   }, {
     path: "products/:productId",
-    element: <SingleProduct />,
+    element: <SingleProduct title="Product" />,
   }, {
     path: "*",
     element: <Error />,
