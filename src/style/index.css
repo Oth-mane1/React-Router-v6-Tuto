@@ -141,6 +141,30 @@ ul {
   object-fit: cover;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8a8a8a;
+  border-radius: 10px
+}
+
+::-webkit-scrollbar-corner {
+  background-color: inherit
+}
+
+::-moz-selection {
+  background-color: var(--primary-500);
+  color: #f0f0f0
+}
+
+::selection {
+  background-color: var(--primary-500);
+  color: #f0f0f0
+}
+
 /* buttons */
 
 .btn {
@@ -397,7 +421,7 @@ ul {
   align-items: center;
 }
 
-#loader svg {  
+#loader svg {
   margin-bottom: 11px;
 }
 
