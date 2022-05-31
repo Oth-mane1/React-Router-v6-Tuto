@@ -12,7 +12,7 @@ This means that v6 is much simpler and easier to use than previous versions.
 
 >Tutorial avaiable on the **Freecodecamp** platform [here](https://www.freecodecamp.org/news/learn-react-router-6/).
 
-🎲 Demo avaiable on :  https://orticle.herokuapp.com/
+🎲 Demo avaiable on :  https://reactroutertuto.netlify.app
 
 ## Available Scripts
 
